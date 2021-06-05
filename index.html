@@ -7,7 +7,7 @@
     <title>mp3 player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-      *{
+      *,*::after,*::before{
           box-sizing: border-box;
       }  
       body{
@@ -111,7 +111,7 @@
           opacity: 1;
           transform: translateY(-100%);
       }
-      .progree-container{
+      .progress-container{
           background: lightgoldenrodyellow;
           border-radius: 5px;
           cursor: pointer;
@@ -159,7 +159,8 @@
        const prevBtn=document.querySelector('#prev')
        const nextBtn=document.querySelector('#next')
        const audio=document.querySelector('#audio')
-       const progress=document.querySelector('.progress-container')
+       const progress=document.querySelector('.progress')
+       const progressContainer=document.querySelector('.progress-container')
        const title=document.querySelector('#title')
        const cover=document.querySelector('#cover')
        const songs=['starboy','toxic','do i wanna know','gimme more','cradles','five more hours','faded','kamariya','summertime sadness','bum tam tam','playdate','rowdy baby']
